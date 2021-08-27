@@ -595,6 +595,148 @@ ol, ul {
     border-radius: 100px;
 }
 
+.donate .grid-template-donate {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.donate .item-grid-donate .item-grid-donate-content {
+    background: #F3F5F8;
+    box-shadow: 0 0 15px rgba(180, 180, 180, 0.11);
+    border-radius: 10px;
+    padding: 0 30px 20px;
+}
+.donate .item-grid-donate.special .item-grid-donate-content {
+    background: #4457C2;
+}
+
+.donate .item-grid-donate.special .donate-title {
+    color: #FFE79F;
+}
+
+.donate .item-grid-donate.special .donate-price .title-price,
+.donate .item-grid-donate.special .donate-price .desc-price {
+    color: white;
+}
+.donate .item-grid-donate.special .donate-offers li {
+    color: white;
+}
+.donate .item-grid-donate.special .donate-btn .buy-link {
+    color: black;
+    background: #FFE79F;
+}
+.donate .item-grid-donate.special .donate-btn .buy-link:hover {
+    background: #F3F5F8;
+    color: #44C267;
+}
+.donate .donate-title {
+    font-family: Play, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #11263A;
+    padding: 20px 0;
+    border-bottom: 1px dashed #CED6DE;
+}
+.donate .donate-offers {
+    padding-top: 35px;
+}
+.donate .donate-offers li {
+    padding: 15px 0;
+    display: flex;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #11263A;
+}
+.donate .donate-offers li .icon {
+    margin-right: 12px;
+    min-width: 24px;
+}
+.donate .donate-offers li.not-access {
+
+    text-decoration-line: line-through;
+    color: #9FA8B0;
+}
+.donate .donate-price {
+    border-top: 1px dashed #CED6DE;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.donate .donate-price .title-price {
+    font-family: Play, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #11263A;
+}
+.donate .donate-price .desc-price {
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 5px;
+}
+.donate .donate-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donate .donate-btn .buy-link:hover {
+    background: #4457C2;
+    color: #F3F5F8;
+}
+.donate .donate-btn .buy-link {
+    transition: .2s;
+    font-family: Play, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4457C2;
+    border: 2px solid #4457C2;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin: 10px 0;
+}
+
+.donate .special-text {
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    color: #A6AEB6;
+    margin-top: 40px;
+}
+.donate .special-text svg {
+    margin-right: 8px;
+}
+.t-c-green {
+    color: #44C267;
+    font-weight: bold;
+}
+@media (max-width: 1200px) {
+    .donate .grid-template-donate {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media (max-width: 991px) {
     #header {
         height: 53px;
@@ -638,5 +780,13 @@ ol, ul {
     }
     #header .slide-menu .contact-mobile .email {
         text-decoration-line: underline;
+    }
+}
+@media (max-width: 767px) {
+    .donate .grid-template-donate {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .donate .button-sign-in-green {
+        display: none!important;
     }
 }
