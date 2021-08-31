@@ -18,7 +18,14 @@ $(document).ready(function () {
     },
   });
 
-
+$('.open-modal').on('click', function () {
+  $('#modal_block .modal-window[data-id='+$(this).data('id')+']').addClass('active');
+})
+  $('#modal_block').on('click', '.background', function () {
+    $(this).closest('.modal-window').removeClass('active');
+  }).on('click', '.modal-close', function () {
+    $(this).closest('.modal-window').removeClass('active');
+  })
 })
 
 function getCount() {

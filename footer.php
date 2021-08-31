@@ -74,6 +74,55 @@
         </div>
     </div>
 </footer>
+<div id="modal_block">
+    <div data-id="1" class="modal-window">
+        <div class="background"></div>
+        <div class="modal-body">
+            <div class="modal-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 2.41714L21.5829 0L12 9.58286L2.41714 0L0 2.41714L9.58286 12L0 21.5829L2.41714 24L12 14.4171L21.5829 24L24 21.5829L14.4171 12L24 2.41714Z" fill="#9FABAE"/>
+                </svg>
+            </div>
+            <div class="modal-title">Подтвердите ваш Email</div>
+            <div class="modal-picture">
+                <img src="/images/modals/1.png" alt="">
+            </div>
+            <div class="modal-text">
+                На адрес [ <a href="mailto:mymail@mail.ru">mymail@mail.ru</a> ] было отправлено
+                письмо со ссылкой для активации аккаунта.
+                Для активации, перейдите по ссылке из письма.
+            </div>
+            <div class="modal-sub-block">
+                <div class="modal-sub-block-desc">
+                    Не получили письмо? <a href="#">Нажмите здесь</a> для повторной отправки.
+                    Или измените Email в поле ниже:
+                </div>
+                <form class="modal-sub-block-input">
+                    <input class="enter-text" type="email" name="mail" id="mail" placeholder="Email">
+                    <input class="enter-btn" type="submit" value="Отправить EMAIL">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div data-id="2" class="modal-window">
+        <div class="background"></div>
+        <div class="modal-body">
+            <div class="modal-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 2.41714L21.5829 0L12 9.58286L2.41714 0L0 2.41714L9.58286 12L0 21.5829L2.41714 24L12 14.4171L21.5829 24L24 21.5829L14.4171 12L24 2.41714Z" fill="#9FABAE"/>
+                </svg>
+            </div>
+            <div class="modal-title">Регистрация завершена, ожидайте подтверждения</div>
+            <div class="modal-picture">
+                <img src="/images/modals/2.png" alt="">
+            </div>
+            <div class="modal-text">
+                Наш модератор позвонит вам в течение суток
+                для подтверждения профиля.
+            </div>
+        </div>
+    </div>
+</div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script src="/js/script.js"></script>
